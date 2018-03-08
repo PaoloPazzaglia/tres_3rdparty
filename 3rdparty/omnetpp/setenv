@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+# Set-up the environment for the (minimal) OMNeT++ distribution
+# shipped as 3rdparty component of the TRES framework.
+
+export omnetpp_root=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
+echo $omnetpp_root
+export PATH=$omnetpp_root/bin:$PATH
+export LD_LIBRARY_PATH=$omnetpp_root/lib:$LD_LIBRARY_PATH
+export HOSTNAME
+export HOST
